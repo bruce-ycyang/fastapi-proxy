@@ -19,7 +19,7 @@ def upload_file(url, file_path):
         return response
 
 # Specify the folder to compress and the output tar.gz file name
-folder_to_compress = 'yy_03_12_11_31_08'
+folder_to_compress = 'yy_03_16_17_21_34'
 tar_gz_filename = 'compressed_folder.tar.gz'
 
 # Compress the folder
