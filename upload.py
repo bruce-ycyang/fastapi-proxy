@@ -20,14 +20,16 @@ def upload_file(url, file_path):
 
 # Specify the folder to compress and the output tar.gz file name
 folder_to_compress = 'yy_03_16_17_21_34'
-tar_gz_filename = 'compressed_folder.tar.gz'
+tar_gz_filename = 'compressed_folder111.tar.gz'
 
 # Compress the folder
-compress_folder_to_tar_gz(folder_to_compress, tar_gz_filename)
+# compress_folder_to_tar_gz(folder_to_compress, tar_gz_filename)
 
 # Specify the URL of the server endpoint to upload the file
-upload_url  = 'http://10.0.64.138:8989/api-upload/uploadfile'
+# upload_url  = 'http://10.0.64.138:8989/api-upload/uploadfile-large'
+# upload_url  = 'http://127.0.0.1:8787/api-upload/uploadfile-large'
 # upload_url  = 'http://localhost:8989/api-upload/uploadfile'
+upload_url  = 'http://localhost:8989/api-upload/uploadfile-large'
 
 # Upload the compressed file
 response = upload_file(upload_url, tar_gz_filename)

@@ -23,7 +23,7 @@ services:
       - autoqa_network
 
   api-upload-report-service:
-    image: bruceycyang/ui-upload-api:v0.0.5
+    image: azziprnd/upload_report_api:latest 
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.api-upload-report.rule=PathPrefix(`/api-upload`)"
